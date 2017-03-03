@@ -29,3 +29,7 @@
    RPM Package Manager (RPM) (originally Red Hat Package Manager; now a recursive acronym) is a package management system.
 ## EPEL
    Extra Package for Enterprise Linux
+## VMware ESXi
+   VMware ESXiとは、コンピュータの仮想化を実現する「VMware」シリーズのソフトウェアのうち、仮想化OS（ハイパーバイザ）として提供されている「VMware ESX」の無償版製品の名称である。VMware ESXiは、有償製品であるVMware ESXから、サービスコンソールと呼ばれる管理用の環境を取り除いた簡易版の製品となっている。サービスコンソールが除かれたことでソフトウェアのサイズは大幅に削減されており、また、機能がシンプルな分だけセキュリティ性能も優れているとされる。VMware ESXiは無償で提供されているが、60日を超えて利用する場合はユーザー登録を行う必要がある。
+## PXEブート　【 Preboot eXecution Environment 】 PXEブート / PXE boot
+    PXEとは、コンピュータをネットワークを通じて遠隔から起動する方式の一つ。Intel社が策定した規格。サーバからネットワークを通じて指示を送信し、電源の入っていないパソコンやクライアント端末を起動することができる。起動に必要なOSイメージはサーバから送信するため、起動するコンピュータにはハードディスクなどのOSの記録された記憶装置がなくてもよく、また、ハードディスクに記録されたOSとは別のOSをサーバから送信して起動することができる。起動するコンピュータには、電源が入っていなくてもサーバからの指示を受信することができる特殊なネットワークインターフェース(NIC、LANカード)が必要となる。

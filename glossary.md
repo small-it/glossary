@@ -113,3 +113,5 @@
   VMware vSphere （以下 vSphere ）とは VMware vSphere ESXi （以下 ESXi ） と VMware vCenter Server （以下 vCenter ）を含む仮想化ソフトウェアのスイートの総称です。この vSphere により、仮想化プラットフォームを実現することができます。
 ##### vmware ESXi
   自分の傾向として、ただ暗記するというのが苦手で。名前の由来とか気になる。。。仮想化なるものを調べていて、よく出てくるvmware ESXi これって何の略なの？由来は何なのと思ったことがある人は沢山いるはず。イトルの通り　Elastic Sky X integrated なのだそう。柔軟な仮想化に願いを込めたようですね。
+##### vSphere Hypervisor
+  VMware ESXは有償となりますが、ESXiは単体であれば無償で提供されています。その製品名が「vSphere Hypervisor」となります。VMware ESXiには有償版も存在しますが、vSphere Hypervisor（無償版のVMware ESXi）との大きな違いは、vSphere HypervisorではvCenter Serverを介した管理ができないという点です。そのため、vCenter Serverが必須となる機能であるvMotionやVMwareHAなどがvSphere Hypervisorでは使用できません。  

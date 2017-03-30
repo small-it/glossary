@@ -165,3 +165,8 @@
 
 #### CoC(Convention over Configuration)
   Ruby on Railsには、「Convention over Configuration（設定より規約）」という原則があります。Ruby on Railsであらかじめ用意された規約に従ってアプリケーションを開発することで、ソースコードの記述量を少なくすることができ、見やすいソースコードになります。決まった規約に従うことで、自分で設定する必要がなくなり、効率よくアプリケーションを開発できます。
+
+#### eRuby
+   By default, view templates are written in a language called eRuby (Embedded Ruby) which is processed by the request cycle in Rails before being sent to the user.
+#### resource
+   A resource is the term used for a collection of similar objects, such as articles, people or animals. You can create, read, update and destroy items for a resource and these operations are referred to as CRUD operations.Rails provides a resources method which can be used to declare a standard REST resource.      

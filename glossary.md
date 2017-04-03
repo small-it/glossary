@@ -170,3 +170,8 @@
    By default, view templates are written in a language called eRuby (Embedded Ruby) which is processed by the request cycle in Rails before being sent to the user.
 #### resource
    A resource is the term used for a collection of similar objects, such as articles, people or animals. You can create, read, update and destroy items for a resource and these operations are referred to as CRUD operations.Rails provides a resources method which can be used to declare a standard REST resource.      
+
+#### Cacti
+  1位 13票「カクタイ」
+  2位 7票「カクチ」
+  3位 6票「カクティ」   

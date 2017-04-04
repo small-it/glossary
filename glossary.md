@@ -224,3 +224,14 @@
 
 #### 【Rails】migrationのchangeとup/downって何が違うの？
   upとdownメソッドは、migrateを実行した時の処理と、rollbackした時の処理を定義します。upで変更したものは、downで元に戻るようにしておかないと、正しくrollbackできません。changeメソッドは、migrateを実行した時の処理を定義します。up/downと違うところは、rollback時の処理を勝手に反転して実行してくれるところです。 ですので、changeメソッドはrollback時の処理を書く必要はありません
+  つまり、migrationを生成する時の名前を見て、「remove***」だったら多分反転できないからup/downケースにしとくねー「add***」だったら消すだけだからchangeに任せてよ！みたいなことをRailsがよしなにしてくれていたから、 名前によって生成されるClassのひな形が違うんですね。
+
+#### ruby variables
+  https://www.tutorialspoint.com/ruby/ruby_variables.htm
+  There are five types of variables supported by Ruby.
+  - Ruby Global Variables: Global variables begin with $.
+  - Ruby Instance Variables:Instance variables begin with @.
+  - Ruby Class Variables:Class variables begin with @@ and must be initialized before they can be used in method definitions.
+  - Ruby Local Variables: Local variables begin with a lowercase letter or  The scope of a local variable ranges from class, module, def, or do to the corresponding end or from a block's opening brace to its close brace {}.
+  - Ruby Constants:Constants begin with an uppercase letter. Constants defined within a class or module can be accessed from within that class or module, and those defined outside a class or module can be accessed globally.
+  - Ruby Pseudo-Variables:They are special variables that have the appearance of local variables but behave like constants. You can not assign any value to these variables.

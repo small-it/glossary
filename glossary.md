@@ -221,3 +221,6 @@
   $ gem update <gem名>
   # gemの実行方法などのヘルプを表示
   $ gem help <gem名>
+
+#### 【Rails】migrationのchangeとup/downって何が違うの？
+  upとdownメソッドは、migrateを実行した時の処理と、rollbackした時の処理を定義します。upで変更したものは、downで元に戻るようにしておかないと、正しくrollbackできません。changeメソッドは、migrateを実行した時の処理を定義します。up/downと違うところは、rollback時の処理を勝手に反転して実行してくれるところです。 ですので、changeメソッドはrollback時の処理を書く必要はありません

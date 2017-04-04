@@ -235,3 +235,19 @@
   - Ruby Local Variables: Local variables begin with a lowercase letter or  The scope of a local variable ranges from class, module, def, or do to the corresponding end or from a block's opening brace to its close brace {}.
   - Ruby Constants:Constants begin with an uppercase letter. Constants defined within a class or module can be accessed from within that class or module, and those defined outside a class or module can be accessed globally.
   - Ruby Pseudo-Variables:They are special variables that have the appearance of local variables but behave like constants. You can not assign any value to these variables.
+
+#### Ruby method
+  Method names should begin with a lowercase letter. If you begin a method name with an uppercase letter, Ruby might think that it is a constant and hence can parse the call incorrectly.Methods should be defined before calling them, otherwise Ruby will raise an exception for undefined method invoking.
+  - Variable Number of Parameters:
+
+#### Ruby Modules and Mixins
+  Modules are a way of grouping together methods, classes, and constants. Modules give you two major benefits.Modules provide a namespace and prevent name clashes.Modules implement the mixin facility.  
+
+#### Ruby require Statement:
+  The require statement is similar to the include statement of C and C++ and the import statement of Java. If a third program wants to use any defined module, it can simply load the module files using the Ruby require statement. Here we are using $LOAD_PATH << '.' to make Ruby aware that included files must be searched in the current directory. If you do not want to use $LOAD_PATH then you can use require_relative to include files from a relative directory.
+
+#### Ruby include Statement:
+  You can embed a module in a class. To embed a module in a class, you use the include statement in the class:If a module is defined in a separate file, then it is required to include that file using require statement before embedding module in a class.
+
+#### Mixins in Ruby:
+  Ruby does not support multiple inheritance directly but Ruby Modules have another wonderful use. At a stroke, they pretty much eliminate the need for multiple inheritance, providing a facility called a mixin.Mixins give you a wonderfully controlled way of adding functionality to classes. However, their true power comes out when the code in the mixin starts to interact with code in the class that uses it.

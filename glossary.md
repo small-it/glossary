@@ -251,3 +251,43 @@
 
 #### Mixins in Ruby:
   Ruby does not support multiple inheritance directly but Ruby Modules have another wonderful use. At a stroke, they pretty much eliminate the need for multiple inheritance, providing a facility called a mixin.Mixins give you a wonderfully controlled way of adding functionality to classes. However, their true power comes out when the code in the mixin starts to interact with code in the class that uses it.
+
+#### How to Deploy Rails Application
+  - サーバ (Server)
+    プログラムとかファイルを保存しておいたり実行したりできるもの。お手持ちのMacやWindowsそれ自体もサーバとして動かすことができたりする。さくらVPSやEC2は、仮想空間で作ったサーバを外部に向けて貸し出している。
+  - Webサーバ (Web Server)
+    HTTPリクエストを受け取ったときに、なんらかの反応を返すプログラム。例えば、localhost/index.htmlにアクセスされると、サーバー内のindex.htmlファイルの中身を返す、という感じ。 VPSやEC2などのサーバにWEBサーバを立てると、そのサーバで外部に向けてWebサイトを公開したりできる。
+  - Rack
+    Rubyアプリケーションで、URLを生成するときに使われるしくみ。PHPなどと違って直接ファイルを参照しない場合に、URLに合わせてどの順番でどのファイルを参照するか、などを管理してくれる。RailsではURLに沿って直接ファイルを参照したりしないので、routes.rbで指定された通りにファイルを経由してviewを表示するという経過をたどるわけですが、その裏ではRackの恩恵に与っているわけです。もうちょっと詳しく知りたい人はこちらがよさそう。
+
+  - Rack Webサーバ(Rack Web Server)
+    RubyアプリケーションとWebサーバをつなぐための中間サーバ、として扱われることが多い。通常のWebサーバはRackのような機能をサポートしていないが、Rack Webサーバを挟むことで、RubyアプリケーションなどをWebサーバ上で動作させることができる。Rack Webサーバ単体でも機能するにはするみたいだけど、Apacheなどの既存のWebサーバはレスポンスの処理がうまいので、それらと組み合わせて使うことが多いらしい。
+
+  - モジュール (※Webサーバにおけるモジュール)
+    デフォルトのWebサーバの機能にはないものを、外部から取り込んで使えるようにするもの。
+
+  - ApacheとNginxとPassengerとUnicornの違い
+    ApacheとNginxはWebサーバ
+    - Apache
+      すごく有名で広く使われているオープンソースのWebサーバ。ドキュメントがwebにいっぱい落ちている。デフォルトの設定だとRailsアプリは使えない。
+    - Nginx
+      エンジンエックスと読むらしい。すごい優秀なWebサーバ。
+  - Apacheと同じくデフォルトだとRailsアプリは使えない。
+
+  - ApacheとNginxの共通点
+   フリーで使えるオープンソースのWebサーバそのままだとRailsアプリが使えない
+  - PassengerはApacheやNginxで使えるモジュール
+Â
+  - Passenger
+
+  - UnicornはRack Webサーバ
+  UnicornはそもそもRackアプリに対応するために作られたRack Webサーバで、単体でも動作する模様。なんだけど、公式が
+
+
+  http://fujiike.hateblo.jp/entry/2015/08/20/170751
+
+
+#### Capistrano とは
+  Ruby 製の自動デプロイ (& サーバー操作) ツール。複雑な Rails 製アプリケーションのデプロイ作業をコマンド数行でさくっと片付けられるようになる。
+#### Bower
+  BowerはJavaScript,CSS,HTMLなどを依存関係を含めて管理してくれる、フロントエンド用パッケージ管理ツール。Twitter製.各パッケージにある設定ファイル"bower.json"に依存パッケージが記述されており、インストール時に依存パッケージを含めて読み込む仕組み。プロジェクトディレクトリ内にbower.json があれば、そのプロジェクトはBower対応しているはず（Githubで今人気のライブラリを見てみると、ほぼ"bower.json"がある）。環境構築時にプロジェクトに設定ファイル"bower.json"を置けば、それに記述されたパッケージ（依存パッケージ含む）を1コマンドで自動一括インストールすることもできる。

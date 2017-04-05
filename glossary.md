@@ -323,3 +323,15 @@
   http://unageanu.hatenablog.com/entry/2015/03/26/115414
 #### irb
   Rubyには、標準で付属されているirb(Interactive Ruby)というツールがあります。consoleで、irbと入力するとirbが実行されます。そこで、対話的にRubyの式を入力・実行することができます
+
+#### Turbolinks
+  Turbolinks makes navigating your web application faster. Get the performance benefits of a single-page application without the added complexity of a client-side JavaScript framework. Use HTML to render your views on the server side and link to pages as usual. When you follow a link, Turbolinks automatically fetches the page, swaps in its <body>, and merges its <head>, all without incurring the cost of a full page load.
+
+#### DSLとは？
+  DSL（Domain Specific Language）は，ドメイン固有言語と訳されてます。DSLは，Java，C#などの汎用言語とは違い，ある特定の種類の問題に特化したコンピュータ言語です。
+  表　身近にある代表的なDSL
+  分類	DSL
+  Java	ANT, Maven，struts-config.xml，Seasar2 S2DAO，Hibernate Query Language，JMock expectations
+  Ruby	Rails Validations，Rails ActiveRecord，Rake，RSpec，Capistrano，Cucumber
+  その他	SQL，CSS，Regular Expression（正規表現）⁠，Make，graphviz
+  http://gihyo.jp/admin/feature/01/dsl/0001?page=2

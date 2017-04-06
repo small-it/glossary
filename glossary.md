@@ -390,3 +390,18 @@
   読み方:スリーディーセキュア。3Dセキュアとは、クレジットカード決済の際に、クレジットカード番号の入力に加え、カード所持者が予めカード会社に登録したパスワードで本人確認を行う仕組みです。カード番号のみを不正に入手しても、本人以外は利用できず他者による不正利用を防止することができます。
 #### 5大カードブランド
   読み方:ごだいカードブランド。5大カードブランドとは、「VISA」「MasterCard」「DinersClub」「AMEX」「JCB」です。通常発行されるクレジットカードは、これら5大国際ブランドのいずれかに所属します。クレジットカードカード決済では、店舗が契約しているブランドのカードを利用できます。
+
+#### E1000
+  E1000: Intel 82545EM ギガビット イーサネット NIC のエミュレート バージョンです。 この NIC 用のドライバはすべてのゲスト OS に含まれているわけではありません。 通常は Linux バージョン 2.4.19 以降、Windows XP Professional x64 Edition 以降、および Windows Server 2003（32 ビット）以降に E1000 ドライバが含まれています。注： E1000 では、ESXi/ESX 4.1 より前のジャンボ フレームがサポートされていません。
+
+#### VMXNET 3
+  VMXNET 3: VMXNET 3 アダプタは、パフォーマンスのために設計された次世代の準仮想化 NIC で、VMXNET や VMXNET 2 とは関係ありません。 これは VMXNET 2 で利用可能な機能をすべて提供し、マルチキュー サポート（Windows の受信側スケーリングとも呼ばれる）、IPv6 オフロード、および MSI/MSI-X 中断配信などのいくつかの新機能を追加しています。 VMXNET 3 のパフォーマンスについては、「Performance Evaluation of VMXNET3 Virtual Network Device」を参照してください。 オペレーティング システム ベンダーはこのカード用の組み込みドライバを提供していないため、VMware Tools をインストールして、VMXNET 3 ネットワーク アダプタを利用するためのドライバを取得する必要があります。
+
+  VMXNET 3 は、限られたセットのゲスト OS で、仮想マシン バージョン 7 以降でのみサポートされています。
+
+  VMXNET 3 アダプタがお使いのゲスト OS および vSphere ESXi バージョンでサポートされているかどうかを特定するには、『VMware Compatibility Guide』を参照してください。
+
+  注：
+  ESXi/ESX 4.1 以前のリリースの場合、VMXNET 2 および VMXNET 3 用 Solaris ゲスト OS ではジャンボ フレームがサポートされません。 この機能がサポートされるのは、ESXi 5.0 for VMXNET 3 以降のみです。 詳細については、「Enabling Jumbo Frames on the Solaris guest operating system (2012445)」を参照してください。
+  Fault Tolerance は、vSphere 4.0 では VMXNET 3 vNIC で構成された仮想マシンでサポートされていませんが、vSphere 4.1 では完全にサポートされています。
+  Windows Server 2012 は、ESXi 5.0 Update 1 以降の e1000、e1000e、および VMXNET 3 でサポートされています。

@@ -335,3 +335,9 @@
   Ruby	Rails Validations，Rails ActiveRecord，Rake，RSpec，Capistrano，Cucumber
   その他	SQL，CSS，Regular Expression（正規表現）⁠，Make，graphviz
   http://gihyo.jp/admin/feature/01/dsl/0001?page=2
+
+#### VS Community
+  2014年 11月 13日、マイクロソフトは、プログラム開発環境 Visual Studio の新しい無料版である Visual Studio Community 2013 を発表した。 ただし、大企業では使えない。今まで、Visual Studio Express (VS Express) が無料で使うことができたが、今回発表された VS Community は、有料の VS Professional と全く同じ機能を持っている。 しかし、学生、オープン ソース開発者、非営利団体従事者、中小企業、スタートアップ、個人開発者のみライセンスが提供され、オープンソース（Open Source Initiative が認めるライセンス）（有償・無償）の開発に限定される。 大企業、または、大企業からの委託業務では、引き続き有料の VS か無料の VS Express を使うことになる。  
+
+#### 継続課金
+  継続課金とは、定期的な決済処理の方法です。通常のクレジットカード決済では、定期的な課金でも毎回ユーザの与信処理（支払いに同意することの確認）が必要です。継続課金サービスでは、エンドユーザのアクション不要の自動的な定期課金をができます。

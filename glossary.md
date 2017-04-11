@@ -444,3 +444,6 @@
 
 #### Vundle
   Vundle, the plug-in manager for Vim http://github.com/VundleVim/Vundle.Vim
+
+#### initrd.img
+  Linux 初期 RAM ディスク (initrd) 

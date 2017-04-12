@@ -446,4 +446,8 @@
   Vundle, the plug-in manager for Vim http://github.com/VundleVim/Vundle.Vim
 
 #### initrd.img
-  Linux 初期 RAM ディスク (initrd) 
+  Linux 初期 RAM ディスク (initrd)
+
+#### xinetdとは
+  スーパーデーモンとしてのお仕事をしているデーモンさん。つまり他のデーモンさんがお休みできるように「お仕事してね」の要求が来ないか代表して見張っているデーモンさんです.
+   

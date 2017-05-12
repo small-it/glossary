@@ -564,3 +564,6 @@
   カクタイ
 #### Xymon
   シモン or サイモン
+
+#### VoIP
+    Voice over Internet Protocol（ボイス オーバー インターネット プロトコル、VoIP（ブイ オー アイピー）、Voice over IP（ボイス オーバー アイピー））とは、音声を各種符号化方式で符号化および圧縮し、パケットに変換したものをIP（Internet Protocol : インターネットプロトコル）ネットワークでリアルタイム伝送する技術である。Voice over Frame Relay (VoFR) ・Voice over ATM (VoA) などと同じVoice over Packet Network (VoPN) の一種。
